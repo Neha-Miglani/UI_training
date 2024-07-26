@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 10px;
+    background-color: pink;
+    color: white;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.intro {
+    background-color: lightblue;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .portfolio, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio {
+    background-color: #f9f9f9;
+}
+
+.project {
+    margin: 20px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(122, 122, 122);
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .project {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .project {
+        display: inline-block;
+        width: 30%;
+    }
+}
